@@ -1,13 +1,14 @@
 // import Login from "./components/Login";
-
+import { motion } from "framer-motion";
 function App() {
   return (
-    <div className="mx-auto w-full h-screen min-w-min bg-slate-900 flex flex-col justify-center place-items-center">
-      <h1 className="text-5xl text-center uppercase top-0">
-        Login & Registre Form
-      </h1>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className=" mx-auto w-full h-screen min-w-min  flex flex-col justify-center place-items-center"
+    >
       {/* <Login /> */}
-    </div>
+    </motion.div>
   );
 }
 
